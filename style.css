@@ -808,12 +808,17 @@ form span {
     height: 20vh;
   }
   .palette-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .palette-info {
+    margin: 1rem;
+    width: 100%;
   }
 
   .palette-info p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     width: 95%;
+    margin-bottom: 0.5rem;
   }
   .jaymart {
     font-size: 2.5rem;
@@ -822,8 +827,8 @@ form span {
   .palette-button {
     width: 300px;
   }
-  .palette-button a {
-    font-size: 0.8rem;
+  .palette-button .code {
+    font-size: 0.6rem;
     padding: 0.8rem;
     margin: 0.5rem;
   }
@@ -846,5 +851,14 @@ form span {
   .close {
     font-size: 1.8rem;
     margin-top: 0.5rem;
+  }
+  .palette-skills {
+    margin: 0.5rem 0;
+  }
+  .skills {
+    font-size: 0.5rem;
+  }
+  .note {
+    font-size: 0.5rem;
   }
 }
