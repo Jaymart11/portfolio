@@ -76,6 +76,10 @@ nav div span {
   color: white;
   font-family: 'Ultra', serif;
 }
+
+nav div a {
+  text-decoration: none;
+}
 .hamburger {
   display: none;
   width: 50px;
