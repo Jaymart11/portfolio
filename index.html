@@ -1,0 +1,210 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>Jaymart Tandoc</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div><span class="jrt">JRT</span></div>
+        <ul>
+          <li><a href="#About" class="about border">About</a></li>
+          <li><a href="#Projects" class="project">Projects</a></li>
+          <li><a href="#Contact" class="contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <div class="ham"></div>
+          <div class="ham"></div>
+          <div class="ham"></div>
+        </div>
+      </nav>
+      <div class="nav-mobile">
+        <a href="#About " class="mobile-about mobile border">About</a>
+        <a href="#Projects " class="mobile-projects mobile">Projects</a>
+        <a href="#Contact " class="mobile-contact mobile">Contact</a>
+      </div>
+
+      <div class="About" id="About" data-aos="zoom-in">
+        <p class="hi">Hi, my name is</p>
+        <h1 class="jaymart">Jaymart Tandoc</h1>
+        <div class="delete">
+          <h4 id="word"></h4>
+          <h4 class="blink">|</h4>
+        </div>
+        <div class="icons">
+          <a href="./OJT_INTEGRATION-PAPER_FINAL_CELESTIAL-JOEBERT-G.pdf" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/open-resume.png" /></a>
+          <a href="https://www.linkedin.com/in/jaymart-tandoc/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" /></a>
+          <a href="https://github.com/Jaymart11" target="_blank"><img src="https://img.icons8.com/fluent/50/000000/github.png" /></a>
+        </div>
+        <a class="contactme" href="#Contact">GET IN TOUCH!</a>
+      </div>
+    </header>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="allmodal">
+          <div class="all-modal-pic">
+            <button class="minus modalbtn">◄</button>
+            <div>
+              <img src="img/palettekulay/for.PNG" alt="Palette Kulay" class="modal-pic pal-pic" />
+              <img src="img/palettekulay/pae.PNG" alt="Palette Kulay" class="modal-pic pal-pic" />
+              <img src="img/palettekulay/paf.PNG" alt="Palette Kulay" class="modal-pic pal-pic" />
+              <img src="img/palettekulay/pag.PNG" alt="Palette Kulay" class="modal-pic pal-pic" />
+              <h1 class="pic-number"></h1>
+            </div>
+            <button class="add modalbtn">►</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="allmodal">
+          <div class="all-modal-pic">
+            <button class="minus modalbtn">◄</button>
+            <div>
+              <img src="img/socialdev/soca.jpg" alt="Palette Kulay" class="modal-pic soc-pic" />
+              <img src="img/socialdev/socb.PNG" alt="Palette Kulay" class="modal-pic soc-pic" />
+              <img src="img/socialdev/socc.PNG" alt="Palette Kulay" class="modal-pic soc-pic" />
+              <img src="img/socialdev/socd.PNG" alt="Palette Kulay" class="modal-pic soc-pic" />
+              <h1 class="pic-number"></h1>
+            </div>
+            <button class="add modalbtn">►</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="allmodal">
+          <div class="all-modal-pic">
+            <button class="minus modalbtn">◄</button>
+            <div>
+              <img src="img/gder/gder1.jpg" alt="Palette Kulay" class="modal-pic gder-pic" />
+              <img src="img/gder/gder2.jpg" alt="Palette Kulay" class="modal-pic gder-pic" />
+              <img src="img/gder/gder3.jpg" alt="Palette Kulay" class="modal-pic gder-pic" />
+              <img src="img/gder/gder4.PNG" alt="Palette Kulay" class="modal-pic gder-pic" />
+              <img src="img/gder/gder5.PNG" alt="Palette Kulay" class="modal-pic gder-pic" />
+              <h1 class="pic-number"></h1>
+            </div>
+            <button class="add modalbtn">►</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Projects">
+      <h1 class="projects" data-aos="zoom-out">Featured Projects</h1>
+
+      <div data-aos="fade-left" class="palette-kulay">
+        <div class="container">
+          <img src="/img/palettekulay/for.PNG" alt="Palette Kulay" class="palette-pic" onclick="visibleModal(0)" />
+          <img src="img/zoom.png" alt="Zoom" class="zoom" onclick="visibleModal(0)" />
+        </div>
+        <div class="palette-info">
+          <h1 class="palette-title">Palette Kulay</h1>
+          <p>
+            A web app to create and customize your own Palette. Copy individual color formatted in hex, hsl, rgb, rgba and every palette has different level of darkness and
+            lightness
+          </p>
+          <div class="palette-skills">
+            <span class="skills">• ReactJS</span>
+            <span class="skills">• Material UI</span>
+          </div>
+          <div class="palette-button">
+            <a href="https://github.com/Jaymart11/Palette-Kulay" target="_blank" class="code">View Code <img src="img/eye-4-24.ico" /></a>
+            <a href="https://palette-kulay.netlify.app/" target="_blank" class="code">View Demo <img src="img/external-link-24.ico" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="fade-right" class="palette-kulay">
+        <div class="container soc-con">
+          <img src="img/socialdev/soca.jpg" alt="Palette Kulay" class="palette-pic" onclick="visibleModal(1)" />
+          <img src="img/zoom.png" alt="Zoom" class="zoom" onclick="visibleModal(1)" />
+        </div>
+        <div class="palette-info soc-info">
+          <h1 class="palette-title">Social Dev</h1>
+          <p>
+            A social media web app for developers. Where you can create your profile and post all your thoughts in post feed area and the other developers can like and comment in
+            your post.
+          </p>
+          <div class="palette-skills">
+            <span class="skills">• ReactJS</span>
+            <span class="skills">• Redux</span>
+            <span class="skills">• Bootstrap</span>
+            <span class="skills">• ExpressJS</span>
+            <span class="skills">• MongoDB</span>
+          </div>
+          <div class="palette-button">
+            <a href="https://github.com/Jaymart11/SocialDev" target="_blank" class="code">View Code <img src="img/eye-4-24.ico" /></a>
+            <a href="https://socialsdev.herokuapp.com" target="_blank" class="code">View Demo <img src="img/external-link-24.ico" /></a>
+          </div>
+        </div>
+        <p class="note">Note : This is hosted in heroku so it takes a while to load.</p>
+      </div>
+
+      <div data-aos="fade-left" class="palette-kulay">
+        <div class="container">
+          <img src="img/gder/gder1.jpg" alt="Palette Kulay" class="palette-pic" onclick="visibleModal(2)" />
+          <img src="img/zoom.png" alt="Zoom" class="zoom" onclick="visibleModal(2)" />
+        </div>
+        <div class="palette-info">
+          <h1 class="palette-title" style="text-align: center">GDER Furniture android app and website</h1>
+          <p>
+            A android app that let you design your living room using augmented reality. In the website you can see the available furniture in android app. The website have chat
+            where you can ask question about your concerns. Also website have CMS to help GDER to check and change some content in the page
+          </p>
+          <div class="palette-skills">
+            <span class="skills">• HTML</span>
+            <span class="skills">• Bootstrap</span>
+            <span class="skills">• JQuery</span>
+            <span class="skills">• PHP </span>
+            <span class="skills">• MySQL</span>
+          </div>
+          <div class="palette-button">
+            <a href="https://github.com/Jaymart11/gderwebsite" target="_blank" class="code">View Code <img src="img/eye-4-24.ico" /></a>
+            <a href="https://gderfurniture1.000webhostapp.com/site/" target="_blank" class="code">View Demo <img src="img/external-link-24.ico" /></a>
+          </div>
+        </div>
+        <p class="note">Note : If you download the app manually turn on all the permissions.</p>
+      </div>
+    </div>
+
+    <div id="Contact">
+      <h1 class="projects" data-aos="zoom-out">Contact</h1>
+      <div id="spinner"></div>
+      <form data-aos="flip-up">
+        <p class="touch">I will get in touch soon!</p>
+        <input type="email" id="email" placeholder="Your Email" autocomplete="off" />
+        <span class="validation-email"></span>
+        <input type="text" id="subject" placeholder="Subject" autocomplete="off" />
+        <span class="validation-subject"></span>
+        <textarea placeholder="Message" id="message" autocomplete="off"></textarea>
+        <span class="validation-message"></span>
+        <button type="button" class="submit">Submit</button>
+      </form>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>
