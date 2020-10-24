@@ -547,6 +547,17 @@ form span {
   color: rgb(187, 187, 187);
 }
 
+footer {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
 @media only screen and (max-height: 800px) {
   nav div span {
     font-size: 2rem;
