@@ -174,12 +174,13 @@ form.addEventListener('click', () => {
     }
 
     Email.send({
-      SecureToken: 'e98a5f71-ee2c-4efb-99b0-163c1579656d',
+      SecureToken: '3fe0346c-26ef-4c24-bf68-bea47973ffec',
       To: 'jaymarttandoc1@gmail.com',
       From: email.value,
       Subject: subject.value,
       Body: message.value,
     }).then(message => {
+      console.log(message);
       if (message === 'OK') {
         loading = false;
         if (loading === false) {
@@ -190,9 +191,15 @@ form.addEventListener('click', () => {
       } else {
         Swal.fire({
           icon: 'error',
-          title: 'Messegane not sent',
+          title: 'Message not sent',
           text: 'Try again later',
         });
+
+        loading = false;
+        if (loading === false) {
+          spinner1.style.display = 'none';
+          form1.style.display = 'flex';
+        }
       }
     });
 
