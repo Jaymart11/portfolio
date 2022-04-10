@@ -176,9 +176,9 @@ form.addEventListener('click', () => {
     Email.send({
       SecureToken: 'fdeec603-82f5-4e01-b46f-368b229aa8ff',
       To: 'jaymarttandoc1@gmail.com',
-      From: email.value,
+      From: 'jaymarttandoc1@gmail.com',
       Subject: subject.value,
-      Body: message.value,
+      Body: `From: <b>${email.value}</b> <br> <br> ${message.value}`
     }).then(message => {
       console.log(message);
       if (message === 'OK') {
