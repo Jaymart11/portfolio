@@ -178,7 +178,7 @@ form.addEventListener('click', () => {
       To: 'jaymarttandoc1@gmail.com',
       From: 'jaymarttandoc1@gmail.com',
       Subject: subject.value,
-      Body: `From: <b>${email.value}</b> <br> <br> ${message.value}`
+      Body: `From: <b>${email.value}</b> <br> <br> <pre>${message.value}</pre>`
     }).then(message => {
       console.log(message);
       if (message === 'OK') {
