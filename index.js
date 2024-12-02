@@ -85,10 +85,10 @@ function typingEffect() {
     if (word.length > 0) {
       document.getElementById("word").innerHTML += word.shift();
     } else {
-      setTimeout(deletingEffect, 800);
+      setTimeout(deletingEffect, 100);
       return false;
     }
-    timer = setTimeout(loopTyping, 150);
+    timer = setTimeout(loopTyping, 100);
   };
   loopTyping();
 }
@@ -315,14 +315,14 @@ const visibleModal = (arr) => {
 
       let viewing = 0;
 
-      picNumber[arr].innerText = "Picture " + (viewing + 1);
+      // picNumber[arr].innerText = "Picture " + (viewing + 1);
       modalButton[arr].onclick = () => {
         viewing += 1;
         if (viewing < 0 || viewing > modalPic.length - 1) {
           viewing = 0;
         }
         modalPic.forEach((e) => {
-          e.style.animation = "animateadd 1000ms ease-in-out";
+          // e.style.animation = "animateadd 1000ms ease-in-out";
           e.style.display = "none";
         });
         if (viewing > 0) {
@@ -330,7 +330,7 @@ const visibleModal = (arr) => {
         } else {
           modalPic[0].style.display = "block";
         }
-        picNumber[arr].innerText = "Picture " + (viewing + 1);
+        // picNumber[arr].innerText = "Picture " + (viewing + 1);
       };
 
       modalButton1[arr].onclick = () => {
@@ -339,7 +339,7 @@ const visibleModal = (arr) => {
           viewing = 0;
         }
         modalPic.forEach((e) => {
-          e.style.animation = "animateadd 1000ms ease-in-out";
+          // e.style.animation = "animateadd 1000ms ease-in-out";
           e.style.display = "none";
         });
         if (viewing < 0) {
@@ -350,7 +350,7 @@ const visibleModal = (arr) => {
         } else {
           modalPic[viewing].style.display = "block";
         }
-        picNumber[arr].innerText = "Picture " + (viewing + 1);
+        // picNumber[arr].innerText = "Picture " + (viewing + 1);
       };
       break;
     case 1:
@@ -361,14 +361,14 @@ const visibleModal = (arr) => {
       modalPic1.forEach((pic) => (pic.style.display = "none"));
       modalPic1[0].style.display = "block";
 
-      picNumber[arr].innerText = "Picture " + (viewing1 + 1);
+      // picNumber[arr].innerText = "Picture " + (viewing1 + 1);
       modalButton[arr].onclick = () => {
         viewing1 += 1;
         if (viewing1 < 0 || viewing1 > modalPic1.length - 1) {
           viewing1 = 0;
         }
         modalPic1.forEach((e) => {
-          e.style.animation = "animateadd 1000ms ease-in-out";
+          // e.style.animation = "animateadd 1000ms ease-in-out";
           e.style.display = "none";
         });
         if (viewing1 > 0) {
@@ -376,7 +376,7 @@ const visibleModal = (arr) => {
         } else {
           modalPic1[0].style.display = "block";
         }
-        picNumber[arr].innerText = "Picture " + (viewing1 + 1);
+        // picNumber[arr].innerText = "Picture " + (viewing1 + 1);
       };
 
       modalButton1[arr].onclick = () => {
@@ -385,7 +385,7 @@ const visibleModal = (arr) => {
           viewing1 = 0;
         }
         modalPic1.forEach((e) => {
-          e.style.animation = "animateadd 1000ms ease-in-out";
+          // e.style.animation = "animateadd 1000ms ease-in-out";
           e.style.display = "none";
         });
         if (viewing1 < 0) {
@@ -396,7 +396,7 @@ const visibleModal = (arr) => {
         } else {
           modalPic1[viewing1].style.display = "block";
         }
-        picNumber[arr].innerText = "Picture " + (viewing1 + 1);
+        // picNumber[arr].innerText = "Picture " + (viewing1 + 1);
       };
       break;
 
@@ -406,14 +406,14 @@ const visibleModal = (arr) => {
       modalPic2.forEach((pic) => (pic.style.display = "none"));
       modalPic2[0].style.display = "block";
 
-      picNumber[arr].innerText = "Picture " + (viewing2 + 1);
+      // picNumber[arr].innerText = "Picture " + (viewing2 + 1);
       modalButton[arr].onclick = () => {
         viewing2 += 1;
         if (viewing2 < 0 || viewing2 > modalPic2.length - 1) {
           viewing2 = 0;
         }
         modalPic2.forEach((e) => {
-          e.style.animation = "animateadd 1000ms ease-in-out";
+          // e.style.animation = "animateadd 1000ms ease-in-out";
           e.style.display = "none";
         });
         if (viewing2 > 0) {
@@ -421,7 +421,7 @@ const visibleModal = (arr) => {
         } else {
           modalPic2[0].style.display = "block";
         }
-        picNumber[arr].innerText = "Picture " + (viewing2 + 1);
+        // picNumber[arr].innerText = "Picture " + (viewing2 + 1);
       };
 
       modalButton1[arr].onclick = () => {
@@ -430,7 +430,7 @@ const visibleModal = (arr) => {
           viewing2 = 0;
         }
         modalPic2.forEach((e) => {
-          e.style.animation = "animateadd 1000ms ease-in-out";
+          // e.style.animation = "animateadd 1000ms ease-in-out";
           e.style.display = "none";
         });
         if (viewing2 < 0) {
@@ -441,7 +441,7 @@ const visibleModal = (arr) => {
         } else {
           modalPic2[viewing2].style.display = "block";
         }
-        picNumber[arr].innerText = "Picture " + (viewing2 + 1);
+        // picNumber[arr].innerText = "Picture " + (viewing2 + 1);
       };
       break;
   }

@@ -1,5 +1,5 @@
 /** @format */
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@700;900&family=Ultra&family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@700;900&family=Ultra&family=VT323&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
 }
 html {
   scroll-behavior: smooth;
-  background: url('./img/Sun-Tornado.svg');
+  background: url("./img/Sun-Tornado.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -74,7 +74,7 @@ nav {
 nav div span {
   font-size: 3rem;
   color: white;
-  font-family: 'Ultra', serif;
+  font-family: "Ultra", serif;
 }
 
 nav div a {
@@ -115,7 +115,7 @@ ul li a {
   padding: 0.5rem 0;
   opacity: 0.5;
   transition: 500ms ease-in-out all;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 ul li a:hover {
@@ -147,23 +147,26 @@ ul li a:hover {
 }
 
 #Projects {
+  margin-top: 10px;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  /* align-items: center; */
+  /* flex-direction: column; */
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .projects {
   color: white;
   background-color: rgb(0, 97, 162);
   /* margin-bottom: 1rem; */
+  margin: 0 auto;
   width: 70%;
   height: 10vh;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
 }
 
@@ -180,7 +183,7 @@ ul li a:hover {
   color: white;
   text-decoration: none;
   transition: all ease-in-out 300ms;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .contactme:hover {
@@ -195,12 +198,12 @@ ul li a:hover {
 .hi {
   color: rgb(0, 97, 162);
   font-size: 2rem;
-  font-family: 'Acme', sans-serif;
+  font-family: "Acme", sans-serif;
 }
 
 .jaymart {
   margin: 0rem 0 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .palette-kulay {
@@ -222,13 +225,13 @@ ul li a:hover {
   width: 100vh;
   text-align: center;
   color: red;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
 }
 .palette-pic {
-  width: 60vh;
-  height: 35vh;
-  margin: 0.5rem;
+  /* width: 60vh; */
+  height: 33.3vh;
+  margin: 0.3rem;
   cursor: pointer;
   transition: all linear 400ms;
 }
@@ -236,7 +239,8 @@ ul li a:hover {
   transform: scale(1.03);
 }
 .container {
-  position: relative;
+  /* position: relative; */
+  /* width: 100vw; */
 }
 
 .zoom {
@@ -277,12 +281,12 @@ ul li a:hover {
 }
 
 .palette-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 1rem;
 }
 
 .palette-info p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 1rem;
 }
 
@@ -302,7 +306,7 @@ ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: all ease-in-out 300ms;
 }
 
@@ -319,7 +323,7 @@ ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: all ease-in-out 300ms;
   background-color: rgb(3, 72, 117);
   color: rgb(187, 187, 187);
@@ -347,7 +351,7 @@ ul li a:hover {
   background-color: black;
   border-radius: 20px;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.7rem;
   margin: 0.3rem;
 }
@@ -468,7 +472,7 @@ ul li a:hover {
 }
 
 #Contact {
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -520,7 +524,7 @@ textarea:focus {
 .touch {
   font-size: 2rem;
   color: rgb(0, 97, 162);
-  font-family: 'Acme', sans-serif;
+  font-family: "Acme", sans-serif;
 }
 
 form span {
@@ -535,7 +539,7 @@ form span {
   width: 25vh;
   height: 60px;
   border-radius: 10px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   color: white;
   cursor: pointer;
@@ -555,7 +559,7 @@ footer {
   justify-content: center;
   background-color: black;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 @media only screen and (max-height: 800px) {
@@ -619,7 +623,7 @@ footer {
 
 @media only screen and (max-width: 1400px) {
   .palette-pic {
-    width: 50vh;
+    /* width: 50vh; */
     height: 25vh;
   }
   .palette-button a {
@@ -699,7 +703,7 @@ footer {
     color: white;
     font-size: 3rem;
     opacity: 1;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   .palette-kulay {
     flex-direction: column;
@@ -759,7 +763,7 @@ footer {
     width: 90%;
   }
   .palette-pic {
-    width: 340px;
+    /* width: 340px; */
     height: 200px;
   }
   .modal-pic {
@@ -815,7 +819,7 @@ footer {
     height: 600px;
   }
   .palette-pic {
-    width: 35vh;
+    /* width: 35vh; */
     height: 20vh;
   }
   .palette-title {
