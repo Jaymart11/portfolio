@@ -188,7 +188,7 @@ form.addEventListener("click", () => {
     }
 
     Email.send({
-      SecureToken: "fdeec603-82f5-4e01-b46f-368b229aa8ff",
+      SecureToken: "9b692254-8ed5-4d45-a06b-da256930d9d6",
       To: "jaymarttandoc1@gmail.com",
       From: "jaymarttandoc1@gmail.com",
       Subject: subject.value,
