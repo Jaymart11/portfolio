@@ -229,6 +229,9 @@ const span = document.querySelectorAll(".close");
 const modalPic = document.querySelectorAll(".pal-pic");
 const modalPic1 = document.querySelectorAll(".soc-pic");
 const modalPic2 = document.querySelectorAll(".gder-pic");
+const modalPic3 = document.querySelectorAll(".pos-pic");
+const modalPic4 = document.querySelectorAll(".tryu-pic");
+const modalPic5 = document.querySelectorAll(".envx-pic");
 const modalButton = document.querySelectorAll(".add");
 const modalButton1 = document.querySelectorAll(".minus");
 const picNumber = document.querySelectorAll(".pic-number");
@@ -442,6 +445,138 @@ const visibleModal = (arr) => {
           modalPic2[viewing2].style.display = "block";
         }
         // picNumber[arr].innerText = "Picture " + (viewing2 + 1);
+      };
+      break;
+    case 3:
+      let viewing3 = 0;
+
+      modalPic3.forEach((pic) => (pic.style.display = "none"));
+      modalPic3[0].style.display = "block";
+
+      // picNumber[arr].innerText = "Picture " + (viewing2 + 1);
+      modalButton[arr].onclick = () => {
+        viewing3 += 1;
+        if (viewing3 < 0 || viewing3 > modalPic3.length - 1) {
+          viewing3 = 0;
+        }
+        modalPic3.forEach((e) => {
+          // e.style.animation = "animateadd 1000ms ease-in-out";
+          e.style.display = "none";
+        });
+        if (viewing3 > 0) {
+          modalPic3[viewing3].style.display = "block";
+        } else {
+          modalPic3[0].style.display = "block";
+        }
+        // picNumber[arr].innerText = "Picture " + (viewing3 + 1);
+      };
+
+      modalButton1[arr].onclick = () => {
+        viewing3 -= 1;
+        if (Math.abs(viewing3) > modalPic3.length - 1) {
+          viewing3 = 0;
+        }
+        modalPic3.forEach((e) => {
+          // e.style.animation = "animateadd 1000ms ease-in-out";
+          e.style.display = "none";
+        });
+        if (viewing3 < 0) {
+          viewing3 = modalPic3.length - 1;
+          modalPic3[viewing3].style.display = "block";
+        } else if (viewing3 === 0) {
+          modalPic3[0].style.display = "block";
+        } else {
+          modalPic3[viewing3].style.display = "block";
+        }
+        // picNumber[arr].innerText = "Picture " + (viewing3 + 1);
+      };
+      break;
+    case 4:
+      let viewing4 = 0;
+
+      modalPic4.forEach((pic) => (pic.style.display = "none"));
+      modalPic4[0].style.display = "block";
+
+      // picNumber[arr].innerText = "Picture " + (viewing2 + 1);
+      modalButton[arr].onclick = () => {
+        viewing4 += 1;
+        if (viewing4 < 0 || viewing4 > modalPic4.length - 1) {
+          viewing4 = 0;
+        }
+        modalPic4.forEach((e) => {
+          // e.style.animation = "animateadd 1000ms ease-in-out";
+          e.style.display = "none";
+        });
+        if (viewing4 > 0) {
+          modalPic4[viewing4].style.display = "block";
+        } else {
+          modalPic4[0].style.display = "block";
+        }
+        // picNumber[arr].innerText = "Picture " + (viewing4 + 1);
+      };
+
+      modalButton1[arr].onclick = () => {
+        viewing4 -= 1;
+        if (Math.abs(viewing4) > modalPic4.length - 1) {
+          viewing4 = 0;
+        }
+        modalPic4.forEach((e) => {
+          // e.style.animation = "animateadd 1000ms ease-in-out";
+          e.style.display = "none";
+        });
+        if (viewing4 < 0) {
+          viewing4 = modalPic4.length - 1;
+          modalPic4[viewing4].style.display = "block";
+        } else if (viewing4 === 0) {
+          modalPic4[0].style.display = "block";
+        } else {
+          modalPic4[viewing4].style.display = "block";
+        }
+        // picNumber[arr].innerText = "Picture " + (viewing4 + 1);
+      };
+      break;
+    case 5:
+      let viewing5 = 0;
+
+      modalPic5.forEach((pic) => (pic.style.display = "none"));
+      modalPic5[0].style.display = "block";
+
+      // picNumber[arr].innerText = "Picture " + (viewing2 + 1);
+      modalButton[arr].onclick = () => {
+        viewing5 += 1;
+        if (viewing5 < 0 || viewing5 > modalPic5.length - 1) {
+          viewing5 = 0;
+        }
+        modalPic5.forEach((e) => {
+          // e.style.animation = "animateadd 1000ms ease-in-out";
+          e.style.display = "none";
+        });
+        if (viewing5 > 0) {
+          modalPic5[viewing5].style.display = "block";
+        } else {
+          modalPic5[0].style.display = "block";
+        }
+        // picNumber[arr].innerText = "Picture " + (viewing5 + 1);
+      };
+
+      modalButton1[arr].onclick = () => {
+        viewing5 -= 1;
+        if (Math.abs(viewing5) > modalPic5.length - 1) {
+          viewing5 = 0;
+        }
+        modalPic5.forEach((e) => {
+          // e.style.animation = "animateadd 1000ms ease-in-out";
+          e.style.display = "none";
+        });
+        if (viewing5 < 0) {
+          viewing5 = modalPic5.length - 1;
+          modalPic5[viewing5].style.display = "block";
+        } else if (viewing5 === 0) {
+          modalPic5[0].style.display = "block";
+        } else {
+          modalPic5[viewing5].style.display = "block";
+        }
+        // picNumber[arr].innerText = "Picture " + (viewing5 + 1);
       };
       break;
   }

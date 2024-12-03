@@ -147,7 +147,7 @@ ul li a:hover {
 }
 
 #Projects {
-  margin-top: 10px;
+  margin-top: 50px;
   display: flex;
   /* align-items: center; */
   /* flex-direction: column; */
@@ -229,7 +229,7 @@ ul li a:hover {
   font-size: 0.8rem;
 }
 .palette-pic {
-  /* width: 60vh; */
+  width: 60vh;
   height: 33.3vh;
   margin: 0.3rem;
   cursor: pointer;
@@ -239,7 +239,7 @@ ul li a:hover {
   transform: scale(1.03);
 }
 .container {
-  /* position: relative; */
+  position: relative;
   /* width: 100vw; */
 }
 
@@ -623,7 +623,7 @@ footer {
 
 @media only screen and (max-width: 1400px) {
   .palette-pic {
-    /* width: 50vh; */
+    width: 50vh;
     height: 25vh;
   }
   .palette-button a {
@@ -762,10 +762,6 @@ footer {
     margin: 2rem;
     width: 90%;
   }
-  .palette-pic {
-    /* width: 340px; */
-    height: 200px;
-  }
   .modal-pic {
     width: 58vh;
   }
@@ -817,10 +813,6 @@ footer {
 @media only screen and (max-width: 400px) {
   .palette-kulay {
     height: 600px;
-  }
-  .palette-pic {
-    /* width: 35vh; */
-    height: 20vh;
   }
   .palette-title {
     font-size: 1.3rem;
