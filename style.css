@@ -146,6 +146,31 @@ ul li a:hover {
   }
 }
 
+.technologies {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: 40px;
+  height: 40px;
+}
+
+.description h2 {
+  color: white;
+  font-size: 10px; /* Tailwind's text-base */
+  font-weight: 700; /* Tailwind's font-bold */
+  line-height: 1.25; /* Tailwind's leading-tight */
+  margin: 0;
+  text-align: center;
+}
+
 #Projects {
   margin-top: 50px;
   display: flex;
@@ -471,16 +496,17 @@ ul li a:hover {
   cursor: pointer;
 }
 
-#Contact {
+#Experience {
   /* margin-top: 6rem; */
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  margin-top: 50px;
 }
 
-#Contact .projects {
+#Experience .projects {
   width: 78%;
 }
 form {
@@ -551,6 +577,61 @@ form span {
   color: rgb(187, 187, 187);
 }
 
+.timeline {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 0 0.5rem;
+  margin-top: 50px;
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(0, 97, 162);
+}
+
+.bar {
+  width: 1.5px;
+  background-color: white;
+  flex-grow: 1;
+}
+
+.short-bar {
+  height: 16px;
+}
+
+.info {
+  padding: 0.75rem 0;
+}
+
+.info-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.info-company {
+  color: rgb(0, 97, 162);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.last {
+  padding-bottom: 0.75rem;
+}
+
 footer {
   height: 10vh;
   width: 100%;
@@ -617,7 +698,7 @@ footer {
     width: 100vh;
   }
   .modal-content {
-    width: 800px;
+    width: 70%;
   }
 }
 
@@ -744,7 +825,7 @@ footer {
     font-size: 2rem;
     width: 90%;
   }
-  #Contact .projects {
+  #Experience .projects {
     width: 90%;
   }
   input {

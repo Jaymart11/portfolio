@@ -7,10 +7,10 @@ if (window.console || window.console.firebug) {
 
 const about = document.querySelector(".about");
 const project = document.querySelector(".project");
-const contact = document.querySelector(".contact");
+const experience = document.querySelector(".experience");
 const mobileAbout = document.querySelector(".mobile-about");
 const mobileProject = document.querySelector(".mobile-projects");
-const mobileContact = document.querySelector(".mobile-contact");
+const mobileExperience = document.querySelector(".mobile-experience");
 const nav = document.querySelector("nav");
 const form = document.querySelector(".submit");
 const form1 = document.querySelector("form");
@@ -30,197 +30,197 @@ window.onscroll = () => {
   if (document.documentElement.scrollTop < 540) {
     nav.classList.remove("nav-black");
     about.classList.add("border");
-    contact.classList.remove("border");
+    experience.classList.remove("border");
     project.classList.remove("border");
     mobileAbout.classList.add("border");
-    mobileContact.classList.remove("border");
+    mobileExperience.classList.remove("border");
     mobileProject.classList.remove("border");
   } else if (
     document.documentElement.scrollTop > 540 &&
-    document.documentElement.scrollTop < 1600
+    document.documentElement.scrollTop < 1400
   ) {
     nav.classList.add("nav-black");
     project.classList.add("border");
     about.classList.remove("border");
-    contact.classList.remove("border");
+    experience.classList.remove("border");
     mobileAbout.classList.remove("border");
-    mobileContact.classList.remove("border");
+    mobileExperience.classList.remove("border");
     mobileProject.classList.add("border");
-  } else if (document.documentElement.scrollTop > 1600) {
+  } else if (document.documentElement.scrollTop > 1400) {
     nav.classList.add("nav-black");
     project.classList.remove("border");
     about.classList.remove("border");
-    contact.classList.add("border");
+    experience.classList.add("border");
     mobileAbout.classList.remove("border");
-    mobileContact.classList.add("border");
+    mobileExperience.classList.add("border");
     mobileProject.classList.remove("border");
   }
 };
 
 about.addEventListener("click", () => {
   about.classList.add("border");
-  contact.classList.remove("border");
+  experience.classList.remove("border");
   project.classList.remove("border");
 });
 
 project.addEventListener("click", () => {
   project.classList.add("border");
   about.classList.remove("border");
-  contact.classList.remove("border");
+  experience.classList.remove("border");
 });
 
-contact.addEventListener("click", () => {
-  contact.classList.add("border");
+experience.addEventListener("click", () => {
+  experience.classList.add("border");
   about.classList.remove("border");
   project.classList.remove("border");
 });
 
-const words = ["Web Developer", "Software Developer"];
-let i = 0;
-let timer;
+// const words = ["Web Developer", "Software Developer"];
+// let i = 0;
+// let timer;
 
-function typingEffect() {
-  let word = words[i].split("");
-  var loopTyping = function () {
-    if (word.length > 0) {
-      document.getElementById("word").innerHTML += word.shift();
-    } else {
-      setTimeout(deletingEffect, 100);
-      return false;
-    }
-    timer = setTimeout(loopTyping, 100);
-  };
-  loopTyping();
-}
+// function typingEffect() {
+//   let word = words[i].split("");
+//   var loopTyping = function () {
+//     if (word.length > 0) {
+//       document.getElementById("word").innerHTML += word.shift();
+//     } else {
+//       setTimeout(deletingEffect, 100);
+//       return false;
+//     }
+//     timer = setTimeout(loopTyping, 100);
+//   };
+//   loopTyping();
+// }
 
-function deletingEffect() {
-  let word = words[i].split("");
-  var loopDeleting = function () {
-    if (word.length > 0) {
-      word.pop();
-      document.getElementById("word").innerHTML = word.join("");
-    } else {
-      if (words.length > i + 1) {
-        i++;
-      } else {
-        i = 0;
-      }
-      setTimeout(typingEffect, 350);
-      return false;
-    }
-    timer = setTimeout(loopDeleting, 30);
-  };
-  loopDeleting();
-}
+// function deletingEffect() {
+//   let word = words[i].split("");
+//   var loopDeleting = function () {
+//     if (word.length > 0) {
+//       word.pop();
+//       document.getElementById("word").innerHTML = word.join("");
+//     } else {
+//       if (words.length > i + 1) {
+//         i++;
+//       } else {
+//         i = 0;
+//       }
+//       setTimeout(typingEffect, 350);
+//       return false;
+//     }
+//     timer = setTimeout(loopDeleting, 30);
+//   };
+//   loopDeleting();
+// }
 
-setTimeout(typingEffect, 1000);
+// setTimeout(typingEffect, 1000);
 
-const re =
-  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+// const re =
+//   /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-email.addEventListener("keyup", () => {
-  if (email.value === "") {
-    validationEmail.innerHTML = "";
-  } else if (!re.test(email.value)) {
-    validationEmail.innerHTML = "<small>Email is invalid </small>";
-    email.style.border = "2px solid red";
-  } else {
-    validationEmail.innerHTML = "";
-    email.style.border = "2px transparent solid";
-  }
-});
+// email.addEventListener("keyup", () => {
+//   if (email.value === "") {
+//     validationEmail.innerHTML = "";
+//   } else if (!re.test(email.value)) {
+//     validationEmail.innerHTML = "<small>Email is invalid </small>";
+//     email.style.border = "2px solid red";
+//   } else {
+//     validationEmail.innerHTML = "";
+//     email.style.border = "2px transparent solid";
+//   }
+// });
 
-subject.addEventListener("keyup", () => {
-  if (subject.value !== "") {
-    validationSubject.innerHTML = "";
-    subject.style.border = "2px transparent solid";
-  }
-});
+// subject.addEventListener("keyup", () => {
+//   if (subject.value !== "") {
+//     validationSubject.innerHTML = "";
+//     subject.style.border = "2px transparent solid";
+//   }
+// });
 
-message.addEventListener("keyup", () => {
-  if (message.value !== "") {
-    validationMessage.innerHTML = "";
-    message.style.border = "2px transparent solid";
-  }
-});
+// message.addEventListener("keyup", () => {
+//   if (message.value !== "") {
+//     validationMessage.innerHTML = "";
+//     message.style.border = "2px transparent solid";
+//   }
+// });
 
-form.addEventListener("click", () => {
-  if (email.value.length === 0) {
-    email.style.border = "2px solid red";
-    validationEmail.innerHTML = "<small>Email is required </small>";
-  } else if (!re.test(email.value)) {
-    validationEmail.innerHTML = "<small>Email is invalid </small>";
-  } else {
-    validationEmail.innerHTML = "";
-    email.style.border = "2px transparent solid";
-  }
+// form.addEventListener("click", () => {
+//   if (email.value.length === 0) {
+//     email.style.border = "2px solid red";
+//     validationEmail.innerHTML = "<small>Email is required </small>";
+//   } else if (!re.test(email.value)) {
+//     validationEmail.innerHTML = "<small>Email is invalid </small>";
+//   } else {
+//     validationEmail.innerHTML = "";
+//     email.style.border = "2px transparent solid";
+//   }
 
-  if (subject.value === "") {
-    subject.style.border = "2px solid red";
-    validationSubject.innerHTML = "<small>Subject is required </small>";
-  } else {
-    validationSubject.innerHTML = "";
-    subject.style.border = "2px transparent solid";
-  }
+//   if (subject.value === "") {
+//     subject.style.border = "2px solid red";
+//     validationSubject.innerHTML = "<small>Subject is required </small>";
+//   } else {
+//     validationSubject.innerHTML = "";
+//     subject.style.border = "2px transparent solid";
+//   }
 
-  if (message.value === "") {
-    message.style.border = "2px solid red";
-    validationMessage.innerHTML = "<small>Message is required </small>";
-  } else {
-    validationMessage.innerHTML = "";
-    message.style.border = "2px transparent solid";
-  }
+//   if (message.value === "") {
+//     message.style.border = "2px solid red";
+//     validationMessage.innerHTML = "<small>Message is required </small>";
+//   } else {
+//     validationMessage.innerHTML = "";
+//     message.style.border = "2px transparent solid";
+//   }
 
-  let loading = false;
-  if (
-    validationEmail.innerHTML === "" &&
-    validationSubject.innerHTML === "" &&
-    validationMessage.innerHTML === ""
-  ) {
-    loading = true;
-    if (loading) {
-      form1.style.display = "none";
-      spinner1.style.cssText =
-        "width: 100%; height: 64%; display:flex; justify-content:center; align-items:center; flex-direction: column;";
-      spinner1.innerHTML =
-        '<h1 style = "color: white;">Sending your message</h1>' +
-        '<img src="img/spinner.svg" alt="Spinner" style = "width: 50vh; height:60%;"/>';
-    }
+//   let loading = false;
+//   if (
+//     validationEmail.innerHTML === "" &&
+//     validationSubject.innerHTML === "" &&
+//     validationMessage.innerHTML === ""
+//   ) {
+//     loading = true;
+//     if (loading) {
+//       form1.style.display = "none";
+//       spinner1.style.cssText =
+//         "width: 100%; height: 64%; display:flex; justify-content:center; align-items:center; flex-direction: column;";
+//       spinner1.innerHTML =
+//         '<h1 style = "color: white;">Sending your message</h1>' +
+//         '<img src="img/spinner.svg" alt="Spinner" style = "width: 50vh; height:60%;"/>';
+//     }
 
-    Email.send({
-      SecureToken: "9b692254-8ed5-4d45-a06b-da256930d9d6",
-      To: "jaymarttandoc1@gmail.com",
-      From: "jaymarttandoc1@gmail.com",
-      Subject: subject.value,
-      Body: `From: <b>${email.value}</b> <br> <br> <pre>${message.value}</pre>`,
-    }).then((message) => {
-      if (message === "OK") {
-        loading = false;
-        if (loading === false) {
-          spinner1.style.display = "none";
-          form1.style.display = "flex";
-        }
-        Swal.fire("Message Sent", "", "success");
-      } else {
-        Swal.fire({
-          icon: "error",
-          title: "Message not sent",
-          text: "Try again later",
-        });
+//     Email.send({
+//       SecureToken: "9b692254-8ed5-4d45-a06b-da256930d9d6",
+//       To: "jaymarttandoc1@gmail.com",
+//       From: "jaymarttandoc1@gmail.com",
+//       Subject: subject.value,
+//       Body: `From: <b>${email.value}</b> <br> <br> <pre>${message.value}</pre>`,
+//     }).then((message) => {
+//       if (message === "OK") {
+//         loading = false;
+//         if (loading === false) {
+//           spinner1.style.display = "none";
+//           form1.style.display = "flex";
+//         }
+//         Swal.fire("Message Sent", "", "success");
+//       } else {
+//         Swal.fire({
+//           icon: "error",
+//           title: "Message not sent",
+//           text: "Try again later",
+//         });
 
-        loading = false;
-        if (loading === false) {
-          spinner1.style.display = "none";
-          form1.style.display = "flex";
-        }
-      }
-    });
+//         loading = false;
+//         if (loading === false) {
+//           spinner1.style.display = "none";
+//           form1.style.display = "flex";
+//         }
+//       }
+//     });
 
-    email.value = "";
-    subject.value = "";
-    message.value = "";
-  }
-});
+//     email.value = "";
+//     subject.value = "";
+//     message.value = "";
+//   }
+// });
 
 const modal = document.querySelectorAll("#myModal");
 const btn = document.querySelectorAll(".palette-pic");
